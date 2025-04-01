@@ -9,7 +9,6 @@ import 'package:app/sugges2.dart';// หรือ path ที่ `HomePage` อ�
 import 'package:google_fonts/google_fonts.dart'; // ✅ import ให้เรียกใช้ฟอนต์
 
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -143,17 +142,17 @@ void navigateToAddPlant(BuildContext context, String category) {
   String getImageForType(String type) {
   switch (type) {
     case 'เดซี่':
-      return 'assets/daisy.PNG';
+      return 'assets/daisy.png';
     case 'กุหลาบ':
-      return 'assets/rose.png';
+      return 'assets/rose.PNG';
     case 'กล้วยไม้':
-      return 'assets/mai.PNG';
+      return 'assets/ochid.png';
     case 'กะเพรา':
       return 'assets/basil.png';
     case 'พลูด่าง':
       return 'assets/pothos.png';
     case 'กระบองเพชร':
-      return 'assets/cac.PNG';
+      return 'assets/cac.png';
     default:
       return 'assets/tree.png'; // รูป default
   }

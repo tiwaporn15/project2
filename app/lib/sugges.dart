@@ -44,21 +44,21 @@ class SuggestPage extends StatelessWidget {
   };
 
       String getImageSuggesType(String type) {
-      switch (type) {
+       switch (type) {
         case 'เดซี่':
-          return 'assets/daisy.PNG';
+          return 'assets/daisy.png';
         case 'กุหลาบ':
-          return 'assets/cac.PNG';
+          return 'assets/rose.PNG';
         case 'กล้วยไม้':
-          return 'assets/cac.PNG';
+          return 'assets/ochid.png';
+        case 'กะเพรา':
+          return 'assets/basil.png';
+        case 'พลูด่าง':
+          return 'assets/pothos.png';
         case 'กระบองเพชร':
-          return 'assets/cac.PNG';
-        case 'พลุด่าง':
-          return 'assets/cac.PNG';
-        case 'กระเพรา':
-          return 'assets/cac.PNG';
+          return 'assets/cac.png';
         default:
-          return 'assets/images/tree.png'; // default image
+          return 'assets/tree.png'; // รูป default
       }
     }
 

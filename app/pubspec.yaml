@@ -39,17 +39,18 @@ flutter:
     - assets/25.PNG
     - assets/50.PNG
     - assets/75.PNG
-    - assets/daisy.PNG
-    - assets/cac.PNG
+
+    - assets/daisy.png
+    - assets/rose.PNG
+    - assets/ochid.png
+    - assets/pothos.png
+    - assets/cac.png
+
     - assets/sugges2/flowinter.jpg
     - assets/sugges2/10flow.jpg
     - assets/sugges2/air.jpg
     - assets/sugges2/bath.jpg
     - assets/sugges2/money.jpg
-    #- assets/images/plant_room.jpg
-    #- assets/images/watering.jpg
-    #- assets/images/fertilizer.jpg
-    #- assets/images/easy_plants.jpg
 
 
 

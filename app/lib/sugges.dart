@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:app/structure/transection.dart';
 import 'package:app/mytree.dart';
+import 'package:google_fonts/google_fonts.dart'; // ✅ import ให้เรียกใช้ฟอนต์
+
 
 class SuggestPage extends StatelessWidget {
   final Transaction transaction;

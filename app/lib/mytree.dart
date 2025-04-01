@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart'; // ✅ import ให้เรียกใช้ฟอนต์
 import 'package:app/structure/transection.dart';
 import 'package:app/main.dart'; 
 import 'package:app/sugges.dart';// หรือ path ที่ `HomePage` อยู่

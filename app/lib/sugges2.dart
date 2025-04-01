@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart'; // ✅ import ให้เรียกใช้ฟอนต์
+
 
 class Suggest2Page extends StatelessWidget {
   final List<Map<String, String>> suggestions = [

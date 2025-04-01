@@ -6,26 +6,30 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:app/mytree.dart'; // ✅ เปลี่ยนให้ตรง path ของคุณ
 import 'package:app/sugges2.dart';// หรือ path ที่ `HomePage` อยู่
+import 'package:google_fonts/google_fonts.dart'; // ✅ import ให้เรียกใช้ฟอนต์
 
 
-void main() => runApp(const MyApp());
+
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
 
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) {
-            return TransectionProvider();
-          },
+          create: (context) => TransectionProvider(),
         ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          textTheme: GoogleFonts.kanitTextTheme(), // ✅ ใส่ฟอนต์ Kanit ทั้งแอป
+        ),
         home: const HomePage(),
         localizationsDelegates: const [
           GlobalMaterialLocalizations.delegate,

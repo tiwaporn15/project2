@@ -102,6 +102,7 @@ class SuggestPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
+              Divider(thickness: 2, color: Colors.green[300]),
 
               // 🔽 กล่องข้อมูลแบบมีกรอบ
               Container(

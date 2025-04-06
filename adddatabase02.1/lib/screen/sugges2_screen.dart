@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:url_launcher/url_launcher.dart';
-import 'package:url_launcher/url_launcher_string.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 class Suggest2Page extends StatelessWidget {
   final List<Map<String, String>> suggestions = [
@@ -9,15 +7,13 @@ class Suggest2Page extends StatelessWidget {
       'title': '20 ต้นไม้มงคลรวยทรัพย์ เศรษฐีรวยทรัพย์ ที่ควรปลูกไว้ในบ้าน',
       'image': 'assets/sugges2/money.jpg',
       'url':
-        'https://www.google.com',
-          //'https://www.jorakay.co.th/blog/owner/other/12-sacred-trees-rich-in-wealth-suitable-for-planting-in-the-house',
+          'https://www.jorakay.co.th/blog/owner/other/12-sacred-trees-rich-in-wealth-suitable-for-planting-in-the-house',
     },
     {
       'title': 'ต้นไม้ในร่ม ทน ดูแลง่าย และปลูกในห้องน้ำได้',
       'image': 'assets/sugges2/bath.jpg',
       'url':
-            'https://flutter.dev',
-          //'https://www.baanlaesuan.com/313244/plant-scoop/indoor-toilet-plant/',
+          'https://www.baanlaesuan.com/313244/plant-scoop/indoor-toilet-plant/',
     },
     {
       'title':
@@ -38,19 +34,15 @@ class Suggest2Page extends StatelessWidget {
           'https://www.freebirdtour.com/17168980/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%86-%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%9F%E0%B8%A3%E0%B8%B5%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%94-10-%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B8%AA%E0%B8%B0%E0%B8%9E%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%94%E0%B8%99',
     },
   ];
-  
-    void _openUrl(String url) async {
-  print('กำลังพยายามเปิดลิงก์: $url');
-  if (await canLaunchUrlString(url)) {
-    await launchUrlString(url, mode: LaunchMode.externalApplication);
-  } else {
-    print('เปิดลิงก์ไม่ได้: $url');
-    throw 'ไม่สามารถเปิดลิงก์ได้: $url';
+
+  void _openUrl(String url) async {
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri);
+    } else {
+      throw 'ไม่สามารถเปิดลิงก์ได้: $url';
+    }
   }
-}
-
-
-
 
   @override
   Widget build(BuildContext context) {
